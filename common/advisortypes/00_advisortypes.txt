@@ -67,7 +67,7 @@ philosopher = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -157,7 +157,7 @@ natural_scientist = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -243,7 +243,7 @@ artist = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -333,7 +333,7 @@ treasurer = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -419,7 +419,7 @@ theologian = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -506,7 +506,7 @@ master_of_mint = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -597,7 +597,7 @@ inquisitor = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -699,7 +699,7 @@ statesman = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -770,7 +770,7 @@ naval_reformer = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -857,7 +857,7 @@ trader = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -923,7 +923,7 @@ spymaster = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -989,7 +989,7 @@ colonial_governor = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -1063,7 +1063,7 @@ diplomat = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -1133,7 +1133,7 @@ navigator = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -1202,7 +1202,7 @@ army_reformer = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -1253,7 +1253,7 @@ army_organiser = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -1300,7 +1300,7 @@ commandant = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -1355,7 +1355,7 @@ quartermaster = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -1406,7 +1406,7 @@ recruitmaster = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -1457,7 +1457,7 @@ fortification_expert = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }
@@ -1505,7 +1505,7 @@ grand_captain = {
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				is_emperor_of_china = yes 
+				uses_meritocracy = yes 
 			}
 		}
 		modifier = { meritocracy = 0.25 }

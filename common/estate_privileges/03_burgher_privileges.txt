@@ -355,7 +355,7 @@ estate_burghers_commercial_board_of_advice = {
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
 	ai_will_do = {
-		factor = 9
+		factor = 50
 		modifier = {
 			factor = 0.5
 			is_absolutism_active = yes
@@ -642,7 +642,11 @@ estate_burghers_land_trade_rights = {
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
 	ai_will_do = {
-		factor = 0
+		factor = 1000
+		modifier = {
+			factor = 0
+			is_year = 1550
+		}
 	}
 }
 
@@ -1297,12 +1301,27 @@ estate_burghers_control_over_monetary_policy = {
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
 	ai_will_do = {
-		factor = 1
+		factor = 5
+		modifier = {
+			factor = 5
+			OR = {
+				inflation = 10
+				num_of_loans = 8
+			}
+		}
 		modifier = {
 			factor = 10
 			OR = {
-				inflation = 15
-				num_of_loans = 15
+				tag = MOS
+				tag = RUS
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 60
 			}
 		}
 		modifier = {

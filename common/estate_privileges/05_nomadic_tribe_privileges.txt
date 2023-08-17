@@ -238,7 +238,7 @@ estate_nomadic_tribes_guaranteed_leadgership_in_host = {
 		army_tradition_decay = -0.005
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 30
 	}
 }
 
@@ -252,7 +252,7 @@ estate_nomadic_tribes_tribal_host = {
 		global_manpower_modifier = 0.2
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 1000
 		modifier = {
 			factor = 0.5
 			is_absolutism_active = yes
@@ -278,7 +278,7 @@ estate_nomadic_tribes_primacy_to_the_bannermen = {
 		land_morale = 0.1
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 100
 		modifier = {
 			factor = 10
 			OR = {
@@ -429,7 +429,7 @@ estate_nomadic_tribes_military_service = {
 		}
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1000
 	}
 }
 estate_nomadic_tribes_ensure_tribal_loyalty = {
@@ -500,6 +500,6 @@ estate_nomadic_tribes_secured_succession = {
 		}
 	}
 	ai_will_do = {
-		factor = 5
+		factor = 1000
 	}
 }

@@ -197,7 +197,7 @@ estate_rajput_rajput_regiments = {
 	on_granted = {
 	}
 	modifier_by_land_ownership = {
-		special_unit_forcelimit = 0.5
+		allowed_rajput_fraction = 0.5
 	}
 	penalties = {
 	}
@@ -339,16 +339,7 @@ estate_rajput_officer_corp = {
 		leader_land_fire = 1
 	}
 	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { has_estate_privilege = estate_rajput_officer_corp }
-			NOT = { army_tradition = 75 }
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 

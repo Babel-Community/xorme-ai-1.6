@@ -5,6 +5,7 @@ interaction = {
 
     trigger = {
         crown_land_share = 10
+        NOT = { is_subject_of_type = xorme_moh_administrative_district }
         NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		hidden_trigger = { has_any_estates = yes }
@@ -66,6 +67,7 @@ interaction = {
 			clr_country_flag = recent_land_distribution
 		}
 		set_country_flag = recent_land_distribution
+		on_sale_of_titles_effect = yes
     }
 	ai_will_do = {
 		factor = 35
@@ -175,6 +177,7 @@ interaction = {
 	cooldown_months = 60
 
     trigger = {
+    	NOT = { is_subject_of_type = xorme_moh_administrative_district }
 		if = {
 			limit = {
 				ROOT = { ai = no }
@@ -248,6 +251,7 @@ interaction = {
 			}
 			add_scaled_republican_tradition = 2
 		}
+		on_summon_the_diet_effect = yes
     }
 	ai_will_do = {
 		factor = 10.0
@@ -289,6 +293,7 @@ interaction = {
 	cooldown_months = 60
 
     trigger = {
+    	NOT = { is_subject_of_type = xorme_moh_administrative_district }
 		hidden_trigger = { has_any_estates = yes }
         NOT = { crown_land_share = 100 }
         NOT = { num_of_rebel_armies = 1 }
@@ -434,6 +439,7 @@ interaction = {
 			limit = { has_government_attribute = theocratic_monarchy_mechanic }
 			change_statists_vs_orangists = 0.05
 		}
+		on_seize_land_effect = yes
 	}
 	ai_will_do = {
 		factor = 75
@@ -443,6 +449,13 @@ interaction = {
 			uses_devotion = yes
 			has_heir = no
 		}
+		modifier = {
+			factor = 0
+			# This check is needed to prevent collision with day-1 event theocracy.1
+			ai = yes
+			NOT = { is_year = 1445 }
+		}
+		
 		modifier = {
 			factor = 0
 			# This is a hack for countries with enclaves that can be hard to get to, to kill the rebels

@@ -625,21 +625,18 @@ fort_15th = {
 	time = 30
 
 	build_trigger = {
+	NOT = { has_province_modifier = verdant_link }
 		if = {
 			limit = { FROM = { ai = yes } }
-			OR = {
-				is_capital_of = FROM
-				all_neighbor_province = {
-					NOT = {
-						OR = {
-							xorme_ai_is_building_fort_trigger = yes
-							xorme_ai_has_any_fort_trigger = yes
-							has_influencing_fort = yes
-						}
+			all_neighbor_province = {
+				NOT = {
+					OR = {
+						xorme_ai_is_building_fort_trigger = yes
+						xorme_ai_has_any_fort_trigger = yes
+						has_influencing_fort = yes
 					}
-				}	
+				}
 			}
-			FROM = { NOT = { num_of_loans = 4 } }
 		}
 	}
 
@@ -1295,7 +1292,7 @@ cathedral = {
 		remove_development_from_building = {
 			building = cathedral
 			type = tax
-			value = 3
+			value = 2
 		}
 		if = {
 			limit = {
@@ -1952,6 +1949,12 @@ fort_17th = {
 			}
 			FROM = { add_treasury = 300 }
 		}
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_development_of_castles_mod
+			}
+			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
@@ -2348,7 +2351,7 @@ drydock = {
 		if = {
 			limit = {
 				FROM = {
-					has_reform = corvee_reform
+					has_government_attribute = manpower_sailors_on_build
 				}
 			}
 			FROM = {

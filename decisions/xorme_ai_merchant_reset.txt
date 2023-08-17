@@ -4,6 +4,7 @@ country_decisions = {
             NOT = { has_country_modifier = xorme_ai_merchant_reset_cooldown }
             had_recent_war = 10
             total_development = 200
+            ai = yes
         }
 
         allow = {

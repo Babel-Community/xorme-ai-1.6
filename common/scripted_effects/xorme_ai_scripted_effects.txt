@@ -82,7 +82,7 @@ xorme_ai_set_crown_land = {
 		limit = { NOT = { crown_land_share = 25 } }
 		change_estate_land_share = {
 			estate = all
-			share = -30
+			share = -20
 		}
 	}
 	add_estate_loyalty = {

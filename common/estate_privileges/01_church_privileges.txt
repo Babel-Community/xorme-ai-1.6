@@ -282,7 +282,7 @@ estate_church_independent_inquisition = {
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
 	ai_will_do = {
-		factor = 9
+		factor = 50
 		modifier = {
 			factor = 0.5
 			is_absolutism_active = yes
@@ -2611,25 +2611,7 @@ estate_church_clerical_education = {
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 0
-			NOT = {
-				estate_loyalty = {
-					estate = estate_church
-					loyalty = 30
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				estate_influence = {
-					estate = estate_church
-					influence = 50
-				}
-			}
-		}
+		factor = 100
 		modifier = {
 			factor = 0.5
 			is_absolutism_active = yes

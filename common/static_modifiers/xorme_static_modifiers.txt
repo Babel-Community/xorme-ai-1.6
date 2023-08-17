@@ -34,7 +34,6 @@ difficulty_very_hard_ai = {
 	core_creation = -0.25
 	idea_cost = -0.25
 	improve_relation_modifier = 0.5
-	development_cost = -0.2
 	build_cost = -0.25
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.3
@@ -75,6 +74,16 @@ luck = {
 	governing_capacity_modifier = 0.25
 }
 
+#FOR PLAYER AND AI = CUZ BIG DEV
+all_nations = {
+	development_cost = 0.1
+	global_tax_income = 16
+	land_forcelimit	= 6
+	naval_forcelimit = 12
+	province_warscore_cost = -0.15
+	administrative_efficiency = 0.025
+}
+
 ai_nation = {
 	############################################################
 	diplomats = 1 # ai has to reserve a diplomat for short term action so it gets an extra to put it on equal footing with player
@@ -83,12 +92,17 @@ ai_nation = {
 	max_absolutism = 20 #Cuz ai cant use the disaster
 	fort_maintenance_modifier = -0.5 #For proper fort logic
 	province_warscore_cost = -0.1
+	core_creation = -0.1
 	state_maintenance_modifier = -0.25
 	may_return_manpower_on_disband = yes #at lst that much for army del bug
 	global_tax_income = 18 #Extra 1.4 ducat for early game
 	governing_capacity = 250 #Fixes pdx big brain (-_-)
+	governing_cost = -0.15
+	state_governing_cost = -0.1
 	sailors_recovery_speed = 0.25
 	global_supply_limit_modifier = 0.25 #REDUCE ARMY EVAL ERRORS + LESS LAG IN LATE GAME
+	nobles_influence_modifier = -0.1
+	eunuchs_influence_modifier = -0.1
 }
 
 capital_city = {

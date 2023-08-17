@@ -468,7 +468,7 @@ spy_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 6.5
+		factor = 5.0
 		modifier = {
 			factor = 4.5
 			is_part_of_hre = yes
@@ -910,6 +910,7 @@ exploration_ideas = {
 	important = yes
 
 	trigger = {
+		NOT = { is_subject_of_type = xorme_moh_administrative_district }
 		if = {
 			limit = { 
 				ai = yes
@@ -1275,6 +1276,7 @@ expansion_ideas = {
 	important = yes
 
 	trigger = {
+		NOT = { is_subject_of_type = xorme_moh_administrative_district }
 		if = {
 			limit = { 
 				ai = yes

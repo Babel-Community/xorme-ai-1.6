@@ -556,7 +556,7 @@ estate_dhimmi_administrative_privileges = {
 	#}
 	cooldown_years = 25
 	ai_will_do = {
-		factor = 0
+		factor = 1000
 	}
 }
 
@@ -1120,6 +1120,6 @@ estate_dhimmi_contribution_demand = {
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
 	ai_will_do = {
-		factor = 0
+		factor = 1000
 	}
 }

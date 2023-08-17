@@ -18,7 +18,11 @@ estate_eunuchs_bookkeepers_privilege = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 500
+		modifier = {
+			factor = 0
+			is_subject_of_type = xorme_moh_administrative_district
+		}
 		modifier = {
 			factor = 2
 			yearly_corruption_increase = 0.2
@@ -69,6 +73,10 @@ estate_eunuchs_outwards_perfection_privilege = {
 	
 	ai_will_do = {
 		factor = 5
+		modifier = {
+			factor = 1000
+			is_subject_of_type = xorme_moh_administrative_district
+		}
 	}
 }
 
@@ -128,6 +136,10 @@ estate_eunuchs_delegate_provincial_administration_privilege = {
 		modifier = {
 			factor = 0
 			yearly_corruption_increase = 0.35
+		}
+		modifier = {
+			factor = 1000
+			is_subject_of_type = xorme_moh_administrative_district
 		}
 	}
 }
@@ -210,6 +222,10 @@ estate_eunuchs_western_bureau_privilege = {
 			factor = 2
 			NOT = { imperial_mandate = 50 } 
 		}
+		modifier = {
+			factor = 0
+			is_subject_of_type = xorme_moh_administrative_district
+		}
 	}
 }
 
@@ -233,6 +249,10 @@ estate_eunuchs_eastern_bureau_privilege = {
 		modifier = {
 			factor = 2
 			NOT = { imperial_mandate = 50 } 
+		}
+		modifier = {
+			factor = 0
+			is_subject_of_type = xorme_moh_administrative_district
 		}
 	}
 }
@@ -263,6 +283,10 @@ estate_eunuchs_royal_intrigue_keepers_privilege = {
 		modifier = {
 			factor = 0
 			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 0
+			is_subject_of_type = xorme_moh_administrative_district
 		}
 	}
 }
@@ -318,10 +342,10 @@ estate_eunuchs_delegate_subject_diplomacy_privilege = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1000
 		modifier = {
 			factor = 0
-			NOT = { yearly_corruption_increase = 0.35 } 
+			is_subject_of_type = xorme_moh_administrative_district
 		}
 	}
 }
@@ -428,6 +452,10 @@ estate_eunuchs_allow_personal_fortunes_privilege = {
 			factor = 0
 			NOT = { yearly_corruption_increase = 0.33 } 
 		}
+		modifier = {
+			factor = 1000
+			is_subject_of_type = xorme_moh_administrative_district
+		}
 	}
 }
 
@@ -445,19 +473,23 @@ estate_eunuchs_single_whip_law_privilege = {
 		
 	}
 	modifier_by_land_ownership = {
-		global_tax_modifier = 0.33
-		inflation_reduction = -0.5
+		global_tax_modifier = 1
+		inflation_reduction = -0.2
 	}
-	penalties = { yearly_corruption = 0.1 }
+	penalties = { }
 	mechanics = { exempt_from_seize_land }
 	ai_will_do = {
-		factor = 1
+		factor = 100
 		modifier = {
 			factor = 0
 			OR = {
-				inflation = 2
-				NOT = { yearly_corruption_increase = 0.35 } 
+				inflation = 5
+				corruption = 10
 			}
+		}
+		modifier = {
+			factor = 10
+			is_subject_of_type = xorme_moh_administrative_district
 		}
 	}
 }
